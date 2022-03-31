@@ -321,7 +321,19 @@
 				<p>The great majority of a homelab’s virtual machines will run Linux or Microsoft operating systems. Linux distros are usually open source and free whereas Microsoft’s operating systems and software is usually very expensive. Fortunately, you can gain access to a surprisingly large number of server operating systems and software programs for no cost whatsoever if you simply have a .edu email account. Thus, by just enrolling at a local community college, you gain access to tens of thousands of dollars worth of free software. Joining the VMUG VMware user group for $200 a year also gives free access to most of VMware’s software.</p>
 				<p>What good are all these virtual machines if you have no services running on them? There are innumerable free services ranging from media streaming using Kodi all the way to network penetration testing using Kali. Check out r/homelab’s great wiki on homelab software to find a list of services to run in your lab.</p>
 			<hr>
+			<div class="post-preview">
+				<h3 class="post-title">Server 2016 Technical Preview on Gates the Hyper-V Host</h3>
+				<div class="post-meta">
+					<p>Posted by <b>Ryan Heavican</b> on August 23, 2016</p>
+				</div>
 			</div>
+			<p>Hyper-V is Microsoft’s native hypervisor that allows for the hosting of virtual machines.  I’ve been seriously neglecting my homelab’s</a> newish Hyper-V server for no good reason lately. Gates (pretty obvious namesake) is a Dell PowerEdge T20 Server with a measly 8GB memory (for now), 2 120GB SSDs in RAID 1 and 2 1TB WD Reds in RAID 1 as well. I’d previously installed Windows Server 2012 R2 Data Center on this server, but that’s about it. So it’s definitely time to bring this thing to life.</p>
+			<p>I, firstly, installed Windows Server 2012 R2 Datacenter on the server’s bare metal. I went with the datacenter edition because it allows for unlimited VMs unlike the other versions.  I gave this new server a static IP and enabled Remote Desktop Connect so I can manage the server remotely. Next, I added the Hyper-V role in Server Manager so now Hyper-V is running on the server’s bare metal. I don’t plan on running any live migrations to or from this server so I didn’t worry about those settings during this installation process.</p>
+			<p>Next it was time to create my first virtual machine within Hyper-V. To do this I navigated to the Hyper-V Manager and clicked ‘new virtual machine’ and followed the easy to use new virtual machine wizard.</p>
+			<p>I configured my VM with 2 GB dynamic memory, 128 GB storage (way overkill) and set it up as a second generation VM so it has the most up to date capabilities. I then specified that the VM use a Microsoft Server 2016 Technical Preview ISO that I’d recently downloaded.</p>
+			<p>I connected to the console of the newly created VM, started it up, and followed the easy to follow Windows prompts to install Server 2016. When I initially started the VM, I ran into a scary looking error message. After some Googling I realized that I simply failed to quickly hold down a key when booting from the ISO for the first time. So press and hold down a key as soon as booting from the ISO or you’ll get a scary warning message like I did.</p>
+			<p>After I had Server 2016 up and running, I made a few final simple configuration changes to make it easier to manage. I then set a static IP address and changed the hostname on the VM. I also enabled remote desktop for remote management.</p>
+			<p>I haven’t added Gates or this newly created VM to my domain/Active Directory. I intend on eventually setting Gates up on its own VLAN and turning it into a primary Domain Controller for a new domain apart from my existing homelab domain. In the meantime, I’ll be installing a SQL 16 server and a Guacamole server on Gates. Stay tuned!</p>
 		</div>
 	</div><!-- About -->
 	<div class="container-fluid about" id="about">
