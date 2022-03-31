@@ -217,7 +217,6 @@
 					<div class="post-meta">
 						<p>Posted by <b>Ryan Heavican</b> on September 9, 2016</p>
 					</div>
-				</div>
 				<p>I’ve recently become interested in acquiring certifications in front end programming, analytics, SEO, and SEM. Aside from catching up on the latest features of these technologies, these certs will enable me to exhibit my knowledge of web development and marketing as a consultant or web service. It doesn’t hurt that I love learning and get a lot of enjoyment from MOOCs, or Massive Online Courses, and certification courses.</p>
 				<p>The Google Analytics is an absolutely crucial tool for web development and online marketing. Google Analytics provides powerful data that can help drive business growth. Typically, a bit Javascript code is placed in the HTML header of all pages on a site to track user sessions and interactions. There are also many Google Analytics plugins</a> that are readily available for the wordpress platform and for other Content Management Systems that are easily installable. This information can then be used to make changes to the site’s user interface, content, and marketing channels.</p>
 				<p>The Google Analytics product is constantly evolving, so this certification course was very helpful in enhancing my understanding of some of the newest features of the platform.</p>
@@ -228,13 +227,13 @@
 				<p>I did find much of the material throughout the various courses to be somewhat redundant and basic, especially when compared to the actual content on the exam. It also seemed that much of the course content is being changed, which is probably why individual certifications in each course are not currently available.</p>
 				<p>I found the actual certification itself to be pretty straight forward. However, one aspect of the exam that I did find frustrating was that many of the topics in the exam were not covered in the course lectures.</p>
 				<p>I’ll be continuing my quest for certifications for the next few months. I intend on obtaining the Google AdWords certification, a few HubSpot certifications, some Adobe Certified Associate certs, and then I’ll be studying for the Microsoft 70-480 exam that tests Programming in HTML5 with JavaScript and CSS3 which I am taking later this Fall in pursuit of getting my Microsoft Certified Developer Certification in Web Apps.</p>
+				</div>
 				<hr>
 				<div class="post-preview">
 					<h3 class="post-title">Build a Virtualization Homelab for Cheaper than a Macbook</h3>
 					<div class="post-meta">
 						<p>Posted by <b>Ryan Heavican</b> on August 24, 2016</p>
 					</div>
-				</div>
 				<p>Have you noticed that the cheapest Macbook currently retails for $1,299? Admittedly it’s an awesome notebook that I’d be ecstatic to own. However, it got me thinking: is it possible to build a lightning fast virtualization computer homelab</a> for cheaper than the current cost of a Macbook?</p>
 				<p>TL; DR: by utilizing newer generation hardware, open source software, and discount programs, it’s absolutely possible to build a fast virutalization homelab for cheaper than the cost of a Macbook.</p>
 				<p>This virtualization homelab will provide you with the opportunity to learn about computer networking, operating systems, even how to make your own router and will also enable you to run any number of really cool services. And this homelab is easily expandable if your homelabbing becomes more and more of an addiction, like it has for me.</p>
@@ -320,13 +319,13 @@
 				<p>pfSense is the open source firewall/routing software that will be the OS of the lab’s firewall. pfSense has incredibly deep functionality and a very active online community and will be a great learning resource for anyone looking to get into networking or network security.</p>
 				<p>The great majority of a homelab’s virtual machines will run Linux or Microsoft operating systems. Linux distros are usually open source and free whereas Microsoft’s operating systems and software is usually very expensive. Fortunately, you can gain access to a surprisingly large number of server operating systems and software programs for no cost whatsoever if you simply have a .edu email account. Thus, by just enrolling at a local community college, you gain access to tens of thousands of dollars worth of free software. Joining the VMUG VMware user group for $200 a year also gives free access to most of VMware’s software.</p>
 				<p>What good are all these virtual machines if you have no services running on them? There are innumerable free services ranging from media streaming using Kodi all the way to network penetration testing using Kali. Check out r/homelab’s great wiki on homelab software to find a list of services to run in your lab.</p>
+			</div>
 			<hr>
 			<div class="post-preview">
 				<h3 class="post-title">Server 2016 Technical Preview on Gates the Hyper-V Host</h3>
 				<div class="post-meta">
 					<p>Posted by <b>Ryan Heavican</b> on August 23, 2016</p>
 				</div>
-			</div>
 			<p>Hyper-V is Microsoft’s native hypervisor that allows for the hosting of virtual machines.  I’ve been seriously neglecting my homelab’s</a> newish Hyper-V server for no good reason lately. Gates (pretty obvious namesake) is a Dell PowerEdge T20 Server with a measly 8GB memory (for now), 2 120GB SSDs in RAID 1 and 2 1TB WD Reds in RAID 1 as well. I’d previously installed Windows Server 2012 R2 Data Center on this server, but that’s about it. So it’s definitely time to bring this thing to life.</p>
 			<p>I, firstly, installed Windows Server 2012 R2 Datacenter on the server’s bare metal. I went with the datacenter edition because it allows for unlimited VMs unlike the other versions.  I gave this new server a static IP and enabled Remote Desktop Connect so I can manage the server remotely. Next, I added the Hyper-V role in Server Manager so now Hyper-V is running on the server’s bare metal. I don’t plan on running any live migrations to or from this server so I didn’t worry about those settings during this installation process.</p>
 			<p>Next it was time to create my first virtual machine within Hyper-V. To do this I navigated to the Hyper-V Manager and clicked ‘new virtual machine’ and followed the easy to use new virtual machine wizard.</p>
@@ -334,6 +333,53 @@
 			<p>I connected to the console of the newly created VM, started it up, and followed the easy to follow Windows prompts to install Server 2016. When I initially started the VM, I ran into a scary looking error message. After some Googling I realized that I simply failed to quickly hold down a key when booting from the ISO for the first time. So press and hold down a key as soon as booting from the ISO or you’ll get a scary warning message like I did.</p>
 			<p>After I had Server 2016 up and running, I made a few final simple configuration changes to make it easier to manage. I then set a static IP address and changed the hostname on the VM. I also enabled remote desktop for remote management.</p>
 			<p>I haven’t added Gates or this newly created VM to my domain/Active Directory. I intend on eventually setting Gates up on its own VLAN and turning it into a primary Domain Controller for a new domain apart from my existing homelab domain. In the meantime, I’ll be installing a SQL 16 server and a Guacamole server on Gates. Stay tuned!</p>
+			</div>
+			<hr>
+			<div class="post-preview">
+				<h3 class="post-title">Deploying a LAMP Server in VMware vSphere</h3>
+				<div class="post-meta">
+					<p>Posted by <b>Ryan Heavican</b> on August 22, 2016</p>
+				</div>
+				<p>I’ve been honing my HTML & CSS recently by utilizing a host of mostly free online resources. Using the online editors that these resources have is a very easy way to view how HTML pages are rendered.</p>
+				<p>However, creating your own lab environment that allows you to build web pages in your own directories on your own server will lead to greater familiarity with actual production environments.</p>
+				<p>LAMP is an open source software stack/bundle that provides developers with the tools needed to create dynamic web pages. These tools are Linux, Apache, MySql, and PHP (LAMP). In this project I’ll be installing the LAMP stack on an Ubuntu 16 Server running in VMware vSphere that will be given the hostname of Torvalds in homage to the creator of Linux.</p>
+				<p>First, I downloaded the most up to date Ubuntu Server 16 ISO from the Ubuntu website. Then I created a new virtual machine in vSphere with 2 CPUs, 2 GB of memory, 40 GB of thin provisioned storage, and my downloaded ISO file as the CD/DVD drive file that would be connected at power up. Then I spun up the VM to configure Ubuntu.</p>
+				<p>I chose the default options when configuring Ubuntu and logged into the server for the first time once it’d rebooted at the end of the configuration process. I then installed Ubuntu desktop because I’m a sucker for having GUIs on my servers. I installed the GUI through apt-get by using the simple following commands and then rebooting:<br><br><code>sudo apt-get update</code><br><code>sudo apt-get install ubuntu-desktop</code></p>
+				<p>Then I gave my server a static IP address so that I could find it on my network. This is done by editing the /etc/network/interfaces file. First I had to give my user permission to edit this file by using the following, substituting in my username:<br><br>
+					<code>sudo chown username /etc/network/interfaces</code><br>
+					<code>sudo chmod ug+rwx /etc/network/interfaces</code></p>
+				<p>Then I found my network adapter listed within the file and changed it to ‘static’ and appended the following network information, substituting my network info for the capital letters, and saved the doc:<br><br>
+					<code>address SERVER_IP</code><br>
+					<code>netmask NETWORK_NETMASK</code><br>
+					<code>network NETWORK_IP</code><br>
+					<code>gateway GATEWAY_IP</code><br>
+					<code>dns-nameservers NAMESERVER_IP</code></p>
+				<p>Next, Apache, MySQL, and PHP need to be installed on the Ubuntu Server. This can be accomplished by using these simple apt-get commands:<br><br>
+					<code>sudo apt-get install apache2</code><br>
+					<code>sudo apt-get install mysql-server</code><br>
+					<code>sudo apt-get install php7 libapache2-mod-php7</code><br></p>
+				<p>MySQL will run you through additional basic configuration steps, such as setting a user password. To verify that apache had successfully installed, I just needed to plug the host IP address into a browser window to make sure I got this:</p>
+				<p>Next, I verified that PHP was up and working by creating a simple PHP file called /var/www/info.php with the following bit of code in the file:<br><br>
+					<code>&lt;?php</code><br>
+					<code>phpinfo();</code><br>
+					<code>?&gt;</code><br></p>
+				<p>Then I restarted the apache service by entering ‘sudo service apache2 restart’ and then navigated to HOSTNAME/info.php in a browser to verify that everything was kosher.</p>
+				<p>I wanted to set up LAN FTP access to my new LAMP server to mimic development on a production web server. To accomplish this, I installed vsftpd which is a lightweight FTP server. I did this with the following command:<br><br>
+					<code>sudo apt-get install vsftpd</code><br></p>
+				<p>Then I edited the /etc/vsftpd.conf file to ensure proper access for my user. I uncommented out the following commands within the doc to do so:<br><br>
+					<code>write_enable=YES</code><br>
+					<code>local_umask=022</code><br></p>
+				<p>And appended these commands to the end of the document:<br><br>
+					<code>pasv_enable=Yes</code><br>
+					<code>pasv_min_port=40000</code><br>
+					<code>pasv_max_port=40100</code>
+				</p>
+				<p>Next, I ensured that my user had access to the directory where the HTML and PHP files will live, so I entered the following commands:<br><br>
+					<code>sudo chmod -R ugo+rw /var/www</code><br>
+				</p>
+				<p>Then I plugged in the host and username info and selected port 21 in my FTP client and was able to connect to the LAMP server. Yay!!</p>
+				<p>I then added an A record and PTR record in my network’s DNS server to associate my new LAMP server’s hostname with it’s IP on my network (and vice versa). Torvalds is a very insecure apache server as it is only meant for internal LAN hosting and isn’t accessible to the internet. However,  I may install encryption/SSH onto the server in the future to give added security and for learning purposes.</p>
+			</div>
 		</div>
 	</div><!-- About -->
 	<div class="container-fluid about" id="about">
