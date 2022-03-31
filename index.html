@@ -380,6 +380,43 @@
 				<p>Then I plugged in the host and username info and selected port 21 in my FTP client and was able to connect to the LAMP server. Yay!!</p>
 				<p>I then added an A record and PTR record in my network’s DNS server to associate my new LAMP server’s hostname with it’s IP on my network (and vice versa). Torvalds is a very insecure apache server as it is only meant for internal LAN hosting and isn’t accessible to the internet. However,  I may install encryption/SSH onto the server in the future to give added security and for learning purposes.</p>
 			</div>
+			<div class="post-preview">
+				<h3 class="post-title">Creating a Google Analytics Plugin for WordPress</h3>
+				<div class="post-meta">
+					<p>Posted by <b>Ryan Heavican</b> on August 18, 2016</p>
+				</div>
+				<p>WordPress development is an invaluable skill. After all, WordPress is the most widely used Content Management System on the web, with some sources reporting that WordPress occupies a 37% share of all CMSs on the web.</p>
+				<p>Becoming familiar with WordPress’s dashboard is a pretty easy task. The dashboard allows users to easily create and manage their site’s content. The dashboard is very intuitive to use with its WYSIWYG GUIs</p>
+				<p>One of the first tasks that any competent content or web manager publishing a new site should tackle is to ensure that analytics data on all traffic is being accurately captured.</p>
+				<p>Google Analytics is a great platform for tracking such traffic and site user engagement data. Google Analytics tracks this data via a small piece of JavaScript code that should be placed in the header of every page of the website being analyzed.</p>
+				<p>There are innumerable Google Analytics plugins for WordPress. Plugins enable further customization of WordPress sites by installing files made by the WordPress community to one’s site.</p>
+				<p>The Google Analytics plugins allow a user to very easily have WordPress automatically append the Google Analytics code to the header section of every site page. However, one of the primary reasons why I deployed my own WordPress blog was to become more familiar with WordPress under the hood.</p>
+				<p>Disclaimer: I’d never created a WordPress plugin before this and I relied entirely on this awesome blog post to add my own Google Analytics plugin to WordPress. By relying on that very helpful post I was able to get my own plugin up and working by tackling the following steps.</p>
+				<p>You must first review your theme’s header.php file to ensure that you can create this plugin by using the wp_head php hook. Simply go to the theme editor in your dashboard by going to Appearance -> Editor and open your site’s header.php file. Then just make sure that wp_head is in the header section of your site between the &lt;head&gt;&lt;/head&gt; tags.</p>
+				<p>Next you must grab the Google Analytics code for your site by going to your Google Analytics account. Ensure that your site is added as a Google Analytics property and then fine your code by going to Admin -> Property -> Tracking Info -> Tracking Code.</p>
+				<p>Next you need to FTP into your site by using an FTP client like FileZilla and the FTP credentials given by your hosting company. Then navigate to wp-content/plugins and create a new file with a name like google-analytics.php. Use a text editor like Notepad++ to add the following PHP code to the top of the new plugin file:<br><br>
+				<code>&lt;?php</code><br>
+				<code>/*</code><br>
+				<code>Plugin Name: Google Analytics Plugin</code><br>
+				<code>Plugin URI: http://WhatEverWebsiteYouLike.com</code><br>
+				<code>Description: Whatever description you want.</code><br>
+				<code>Author: Any author’s name you want</code><br>
+				<code>Version: 1.0</code><br>
+				<code>*/</code>
+				</p>
+				<p>This code gives WordPress the basic information for this plugin that will display in the Plugins section of your WordPress dashboard.</p>
+				<p>Next we need to add the actual PHP function by adding this code beneath the existing code:<br><br>
+				<code>function google_analytics() { ?></code><br>
+				<code><strong>Copy and paste your Google Analytics code here!!!</strong></code><br>
+				<code>&lt;?php }</code><br>
+				<code>add_action( ‘wp_head’, ‘google_analytics’, 10 )</code>
+				</p>
+				<p>Notice that you’ll need to copy and paste your Google Analytics code from your Analytics page into the code above.</p>
+				<p>Next you need to activate the plugin that you created by going to you Dashboard and then Plugins -> Installed Plugins and look for Google Analytics Plugin. Then activate the plugin by clicking the activate link below its name.</p>
+				<p>Then you need to verify that your plugin works properly. First, review the page source of any page on your site by right clicking and selecting view source. Then lensure that your Google Analytics JavaScript code is at the end of the page’s header section near the closing &lt;/head&gt; tag.</p>
+				<p>Lastly, you need to verify that Google Analytics is receiving data from your site. Go back to the Tracking Code section of your site in Google Analytics. Check the status of your Tracking ID and click the send test traffic button to verify that traffic info is being collected.</p>
+				<p>Great job on installing a plugin that you created from scratch! Although this exercise used some borrowed PHP code, it helps you understand the process of creating and activating your very own plugins and enables one to become familiar with Google Analytics.</p>
+			</div>
 		</div>
 	</div><!-- About -->
 	<div class="container-fluid about" id="about">
