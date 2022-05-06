@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.ryanheavican.com/sitemap.xml
+Sitemap: https://ryanheavican.com/sitemap.xml
