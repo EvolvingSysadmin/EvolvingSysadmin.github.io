@@ -1,5 +1,6 @@
 h1{font-weight:1000; color:#0f0f0f; text-transform:uppercase; font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; margin-top:0;margin-bottom:52px;font-size:90px; margin-top:50px;font-size:50px}
-h2{font-size:25px;font-family:'Rock Salt',cursive;color:#0f0f0f}
+h2{font-size:25px;font-family:'Rock Salt',cursive;color:#32cd32}
 p{line-height:1.5;margin:15px 0;font-size:18px;padding-left:10px;padding-right:10px;color:#333;font-size:16px;padding-bottom:10px}
 .homepage>a{color:#32cd32}
 a:focus,a:hover{color:#32cd32}
+a{color:#333}
