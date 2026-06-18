@@ -1,0 +1,27 @@
+title: Ryan Heavican
+description: Cybersecurity professional based in Bishop, CA. CISSP | M.S. Cybersecurity, Georgia Tech.
+url: "https://ryanheavican.com"
+baseurl: ""
+
+author:
+  name: Ryan Heavican
+  email: ryan@ryanheavican.com
+  location: Bishop, CA
+  linkedin: https://linkedin.com/in/ryanheavican
+  github: https://github.com/EvolvingSysadmin
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

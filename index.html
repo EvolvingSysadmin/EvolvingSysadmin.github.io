@@ -1,498 +1,243 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="utf-8">
-	<title>Ryan Heavican | Ryan's Techsploits</title>
-	<meta content="Ryan Heavican's Techsploits is a technology blog about information security, computer networking, web dev and other nerdy obsessions." name="description">
-	<meta content="Ryan Heavican, Techsploits, Technology Blog, Heavican, Homelab, Virtualization" name="keywords">
-	<meta content="Ryan Heavican" name="author">
-	<link href="https://plus.google.com/u/0/+RyanHeavican" rel="author">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<link href="http://www.ryanheavican.com" hreflang="en-US" rel="alternate">
-	<meta content="width=device-width, initial-scale=1.0 maximum-scale=1" name="viewport">
-	<!--- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<!-- Bootstrap Core CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<!-- CSS stylesheet -->
-	<link href="css/home.css" rel="stylesheet">
-	<!-- Custom Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Rock+Salt" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link href="font-awesome-4.7.0/css/font-awesome.min.css" media="bogus" rel="stylesheet">
-	<!-- Google Analytics -->
-	<script>
-	          (function(i, s, o, g, r, a, m) {
-	              i['GoogleAnalyticsObject'] = r;
-	              i[r] = i[r] || function() {
-	                  (i[r].q = i[r].q || []).push(arguments)
-	              }, i[r].l = 1 * new Date();
-	              a = s.createElement(o),
-	                  m = s.getElementsByTagName(o)[0];
-	              a.async = 1;
-	              a.src = g;
-	              m.parentNode.insertBefore(a, m)
-	          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+---
+layout: default
+title: Ryan Heavican
+---
 
-	          ga('create', 'UA-29114312-1', 'auto');
-	          ga('send', 'pageview');
-	</script>
-</head>
-<body>
-	<!-- Nav -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header page-scroll">
-				<button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> MENU <i class="fa fa-bars"></i></button> <a class="navbar-brand" href="#" id="navbar-brand">&lt;TECH&gt; SPLOITS</a>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav navbar-right" id="navbar-nav">
-					<li>
-						<a href="#blog">Blog</a>
-					</li>
-					<li>
-						<a href="#about">About</a>
-					</li>
-					<li>
-						<a href="https://github.com/evolvingsysadmin">GitHub</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav><!-- Page Header -->
-	<header class="intro-header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					<div class="site-heading">
-						<h1>Ryan Heavican</h1><span class="subheading">&lt;TECH&gt; SPLOITS</span><br>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header><!-- Blog Content -->
-	<div class="container-fluid blog" id="blog" role="main">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post">
-				<h2>Blog</h2><a href="#"></a>
-				<div class="post">
-					<h3 class="post-title">Documentation Toolkits</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on June 29, 2023</p>
-					</div>
-					<p>I extensively rely on documentation on a daily basis, like many other across IT. I also create documentation related to personal interests, such as for cybersecurity capture the flag platforms, to ensure that knowledge/code can be reused practically.</p><p>One of my personal projects this year involves creating documentation toolkits for relevant areas of IT using Markdown, GitHub, and GitBook. These are ongoing projects that aren't near completion and will likely evolve for quite some time. However, it's been a great experience creating these toolkits, which I will be able to apply practically. So here's the <a href="https://redteam.ryanheavican.com">Red Team Toolkit</a> for offensive security, the <a href="https://blueteam.ryanheavican.com">Blue Team Toolkit</a> for defensive security, and the <a href="https://sysadmin.ryanheavican.com">Sysadmin Toolkit</a> for Systems Administration</p>
-				</div>
-				<hr>	
-				<div class="post">
-					<h3 class="post-title">Blue Team Level 1 Certification</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on November 28, 2022</p>
-					</div>
-					<p>I had a great time studying for the <a href="https://www.credly.com/badges/1ad21178-2d84-4b5f-9481-0f7a164efc75">Blue Team Level 1 Certification</a>, which I passed recently. This exam simulated a real-world security incident where responders have 24 hours to determine exactly what happened throughout the entire course of the incident. The exam participants utilize tools like Splunk, Wireshark, Autopsy, and Volatility within Windows and Linux environments. I completed many labs on platforms like TryHackMe, CyberDefenders, and Blue Team Labs Online in preparation for the exam, which was a really fun experience that mimicked real world cybersecurity scenarios.</p> <p>Now I'm pivoting to Governance, Risk and Compliance training, which aligns well with my Georgia Tech Cybersecurity graduate program. As such, I'm pursuing Archer Integrated Risk Management certifications before my next semester begins followed by Certified Information Systems Auditor later next year.</p>
-				</div>
-				<hr>				
-				<div class="post">
-					<h3 class="post-title">PowerShell Scripting</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on May 9, 2022</p>
-					</div>
-					<p>I’ve been honing my PowerShell recently. I took a great Udemy course <a href="https://www.udemy.com/course/advanced-scripting-tool-making-using-windows-powershell/"> Advanced Scripting & Tool Making using Windows PowerShell </a> that provided great insight into PowerShell’s impressive capabilities. I’ve created a <a href="https://github.com/EvolvingSysadmin/Systems-Administration-Toolkit">GitHub repo</a> with some useful PowerShell scripts, including a few very basic scripts that I’ve written.</p>
-				</div>
-				<hr>				
-				<div class="post">
-					<h3 class="post-title">Blog Revival</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on March 31, 2022</p>
-					</div>
-					<p>It's been quite some time since I've given attention to this site. I figured I'd post more consistently if I threw it up on GitHub pages, which I've done. I plan on writing more posts about work I'm doing related to Information Security, programming, homelabbing, and automation. It should be fun!</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">New Hypervisor and Other Homelab Changes</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on August 10, 2018</p>
-					</div>
-					<p>I've made changes to my homelab recently that I'm excited about. I installed Citrix XenServer on my Thinkserver TS140; I'd rather use an open source hypervisor unlike VMware vSphere. I joined the VMware Users Group to get heavily discounted access to vSphere but would rather not deal with recurring licensing at all.</p>
-					<p>So far I've installed a few ubuntu server VMs on the XenServer host. I’m not going to host all that many VMs on this server since I now do my studying/labbing using either HyperV or VMWare Workstation on my ridiculously powerful laptop.</p>
-					<p>There are two more immediate homelab projects that I'm working on. I'm installing an SSD in my Watchguard Firebox X1250e that runs pfSense. I currently run the embedded NanoBSD version of pfSense on a compact flash card, which has limitations. I have to be a little creative to install the SSD, but installing it will give me access to deeper pfSense functionality related to some packages and logging.</p>
-					<p>I'm also going to install Pi-hole DNS sinkhole and Kodi open source theater on some raspberry pis in addition to buying some used wireless XBox controllers for my RetroPie.</p>
-					<p>More homelab updates to come.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">The Impending MCSA 70-740</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on July 19, 2018</p>
-					</div>
-				<p>I rescheduled the 70-740 exam to give me a few more weeks of studying. So far I've completed two prep courses, one offered through CBT Nuggets and the other through PluralSight. I'll mostly just take practice tests from here until the test date.</p>
-				<p>Studying for this cert has been a slower process than expected. I started rock climbing in March and have become completely obsessed with the sport ever since. My goal is to be able to consistently send V4 boulder problems by the end of the summer, which is likely wishful thinking.</p>
-				<p> I've also been spending even more time outdoors than usual, especially at the beach, and I'm stoked for a series of upcoming camping trips to the Eastern Sierra.</p>
-				<p>One reason I've been making the most out of my personal time lately is because of just how much time I had to devote to studying for the CISSP last year. Nevertheless, it'll be nice to take the 70-740 and make progress towards an MCSE in Cloud Infrastructure and Architecture.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Best Resources for MCSA 70-740 Exam</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on April 27, 2018</p>
-					</div>
-					<p>There's not a lot written about the 70-740 MCSA exam since it's a relatively new cert, so I figured I’d make a quick post about study materials. The most effective resources I've found for the 70-740 exam so far are PluralSight's 70-740 course series, the MCSA Windows Server 2016 70-740 Exam Study Guide from Sybex, and the MeasureUp test engine for 70-740.</p>
-					<p>The PluralSight course is particularly awesome and indispensable. It goes into Server 2016 in great detail and is geared towards those who follow along in their own lab, like me. Plus, the number of VMs needed for their High Availability course provided the perfect excuse to buy more RAM for my laptop. :)</p>
-					<p>I highly suggest delving into these resources if you’re considering the 70-740 cert.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">The Year of Microsoft Certification</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on March 19, 2018</p>
-					</div>
-					<p>I actually had a great time studying for the CISSP and CompTIA CSA+ last year and am really excited to obtain more certifications in the coming years. The CISSP/CSA+ were great at providing foundational knowledge of information systems and information security but now I'm looking for more specific, technical certs. I've been an admin for a windows domain environment for the past 5ish years so that seemed like a good place to start.</p>
-					<p>So I've been studying for the tests that comprise the Windows Server 2016 Microsoft Certified Solutions Associate path and will take an additional test thereafter to become a Microsoft Certified Solutions Expert in Cloud Platform and Infrastructure. The current test I'm studying for, 70-740, mainly covers Server 2016 installation and storage which means....PowerShell!!! I love PowerShell and am really excited to continue learning more PowerShell through this Microsoft Certification path. More to come.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Studying for the CompTIA CSA+ Certification</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on November 28, 2017</p>
-					</div>
-					<p>Over the past year, my curiosity in Information Security has been piqued. I now want to learn as much as I can about InfoSec from both adminisrative and technical perspectives, and I've found that pursuing certificates is a great way of doing so.</p>
-					<p>I'm currently studying for the newish CompTIA Cybersecurity Analyst (CSA+) cert, which seems like a logical choice after taking the CISSP earlier this month. Fortunately, the breadth of testable information is more limited than on the CISSP, which means I won't have to pour over thousands of pages of study materials or take thousands of practice questions (which is why I stopped blogging here for so long).</p>
-					<p>So far I've been using CompTIA's Certmaster test engine along with the CompTIA CSA+ study guide by Mike Chapple & David Seidl. I've already completed Certmaster and will be reviewing the study guide over the next few weeks before I take the test on December 11th. I'm really looking forward to completing the CSA+ to move onto studying for the OSCP, which will consume the bulk of my free time in 2018.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Beyond the CISSP</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on November 8, 2017</p>
-					</div>
-					<p>Well it's taken most of 2017, but my journey through the CISSP exam is finally complete. I studied regularly for about 6 months and actually extended my test date by a month to garner more confidence for the exam. Fortunately I passed on my first attempt yesterday, although I must still go through the endorsement process to officially become a CISSP.</p>
-					<p>I enjoyed learning about InfoSec at a broad overview while studying for this cert. But now I'm ready for something more technical rather than jumping into another managerial-focused cert like the Certified Information Systems Auditor (CISA), which I plan on eventually taking.</p>
-					<p>I would ultimately like to become an Offensive Security Certified Professional (OSCP) within the next few years but would like to further develop and hone my technical skills before jumping into that journey. An obvious intermediary technical cert would be the Certified Ethical Hacker, but the CEH is very expensive and imparts little technical knowledge compared to other more respected certs, according to what I've read.</p>
-					<p>Thus, I've decided to pursue CompTIA's new Cybersecurity Analyst (CSA+) cert. I'm slightly nervous about pursuing this cert without having completed the CompTIA Triad (A+, Network+ and Security+) but think that my CISSP, work and labbing experience should give me a solid foundation. I'm also teaching myself Python right now, which is an absolutely rad programming language with tons of application in InfoSec.</p>
-					<p>Although I still feel like a relative InfoSec noob, I can't wait to learn and share more and more as my interest in the field grows.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Pursuing A CISSP Certification</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on May 31, 2017</p>
-					</div>
-					<p>Security has become a focus of mine over the past 6 or so months. This interest sprung out of curiosity in my homelab. I began playing with things like Group Policy, routing between subnets, SNORT Network Intrusion Prevention System, Sophos Unified Threat Management software, MetaSploit and Security Onion Intrusion Detection System.</p>
-					<p>This interest in information security is also due in part to a project at work in which my company must obtain NIST SP 800-171 IT security compliance as a government subcontractor.</p>
-					<p>I’ve decided to become a Certified Information Systems Security Professional by passing the CISSP exam to learn more about how to properly secure information systems. This certification has become one of the gold standards in information security and those holding this certificate are becoming more and more in demand.</p>
-					<p>The CISSP test is pretty beastly: 250 questions on topics ranging from cryptography to network security to legal compliance and access control. The scope of this test is wide and requires a great breadth of knowledge. I’ve been studying for about a month or so and hope to feel confident enough to take the test this fall. More CISSP posts to come!</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">New Blog Format</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on May 23, 2017</p>
-					</div>
-					<p>I obviously haven't posted here in quite some time. There've been a few reasons for this.</p>
-					<p>Firstly, I primarily built this site as a learning experience and I've largely satisfied my curiosity in bootstrap responsive design, HTML5, and CSS3.</p>
-					<p>Secondly, the way I've formatted this site has made posting an onerous task since so much content must be created for each post.</p>
-					<p>Reducing the need to create so much content will result in more frequent posts. So I will no longer make individual pages for each blog post. Rather, blog posts will be added only to the site's homepage.</p>
-					<p>Lastly, I've become increasingly interested in information security and auditing over the past months. As such, there will be more posts about InfoSec such as learning opportunities, professional certificates, and technical methods.</p>
-					<p>Expect more frequent posts on information security in the coming weeks.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Developing a Graphic Design Portfolio</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on Janurary 2, 2017</p>
-					</div>
-					<p>I’ve become more and more interested in graphic design over the past 4 years. This is largely because my current job role as a one man IT department requires that I wear many different hats, including that of a graphic designer.</p>
-					<p>Fortunately, I’ve grown very fond of doing graphic design and love taking up graphic design projects. Over the past few years I’ve designed logos, product handouts, posters, CAD drawings, stickers, magazine ads, website mockups, and so on.</p>
-					<p>I rely heavily on Adobe Illustrator as my main tool when generating graphics design materials. Illustrator has deep functionally and the vast resources that are readily available online make learning new techniques fun and easy.</p>
-					<p>Most recently, I’ve been partial to flat design, which uses a muted palette and minimalistic elements to create designs that have intuitive user interface. Click the link above if you're interested in taking a look at any of my design work.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Electronic Voting Systems, Fitbit, Google, and the Circle by Dave Eggers</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on November 23, 2016</p>
-					</div>
-					<p>I pretty much always struggle to get through non-fiction while traveling. Titles like “VMware vSphere 5.5 Cookbook” and “Nmap 6: Network Exploration and Security Auditing Cookbook” are less appealing when stuck on an airplane, without Internet access, for hours on end.</p>
-					<p>Instead, I find myself reading mostly science fiction by authors like Philip K Dick and Neal Stephenson. Most recently I decided to dive into Dave Eggers’ book “The Circle”.</p>
-					<p>This recently published book is a great a read that addresses themes that are incredibly relevant. The parallels between this book and current events, and to my personal life, are striking.</p>
-					<p>The book centers on an Internet and technology company called the Circle, which seeks to better humanity through data tracking and interconnectedness. The Circle’s founder are given godlike status by those inside and outside of the company, particularly politicians. And the company’s employees, called Circlers, are desperate to further the company’s goals to a cultish degree.</p>
-					<p>Specifically, the Circle seeks to eliminate anonymity and privacy in order to bolster personal safety, health, convenience, political participation, and interconnectedness. Does this all sound familiar?</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">How to Make an Affordable RetroPie Gaming Console</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on November 2, 2016</p>
-					</div>
-					<p>Remember the good old days when gaming meant playing the Oregon Trail on an old school Macintosh computer? Ever wish you could play the original Super Mario Bros on your home TV? Well, you can. And you can even do so for less than $100.</p>
-					<p>By taking advantage of an awesome project called RetroPie, you can make a console that will enable you to play any old school games that were released for nearly any video game system. Better yet, many of those great old games are readily available for download on the Internet.</p>
-					<p>So how is this all possible? This is possible by using the tiny, yet surprisingly powerful, Raspberry Pi computer board. Raspberry Pis were intended to be used in projects exactly like the RetroPie</p>
-					<p>Making a RetroPie is very straightforward so there’s no excuse to let your nerdy side out and go buy the simple parts that you’ll need for your console. Not only will you end up with a great gaming console that will unquestionably be a hit with groups of friends at gatherings, but you’ll have learned a bit about computing along the way.</p>
-					<p>I’ve already put in the legwork by making 2 RetroPie consoles, now you just need to click the link above so that you can learn to make your own.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Converting a WordPress Blog to Flat HTML</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on October 28, 2016</p>
-					</div>
-					<p>Hi Internets! It’s been about a month since my last Techsploits blog post. But there has been good reason for this. For the past month or so I’ve been spending much of my spare time building a new blog layout from the ground up. This has been a great experience in learning about front end web development. And importantly, this new setup will give me greater flexibility for further developing my web development, web design, and Search Engine Optimization skills.</p>
-					<p>Building the new Techsploits blog layout was a great learning process. It was also a time intensive process even though the current site consists of relatively little content and only a few page templates.</p>
-					<p>The first step I took in building the new blog was design research. I spent a good deal of time looking for blog layouts that I found visually appealing. I also broke down the design of some of the biggest news websites on the web to see how they present articles. Once I found different design elements that I could turn into a simple and clean layout, I started building out the site.</p>
-					<p>I decided to build the blog using bootstrap. Bootstrap is an HTML, CSS, and JavaScript framework that makes creating web pages very easy. Bootstrap is also geared towards mobile web development which makes building responsive sites that look good on both desktop and mobile very easy.</p>
-					<p>Bootstrap is a mobile first framework. This means that developers should design their bootstrap sites for mobile screens first and then use CSS to style the site for desktop. Unfortunately I took the opposite approach with my blog.</p>
-					<p>I built my site for desktop first and then had to go back to ensure my layout was responsive for mobile. The whole process was a great learning experience. Going forward, I’ll still build my bootstrap sites for desktop first. But I’ll be able to style sites in a way that makes building out the responsive mobile styling very easy.</p>
-					<p>I hosted Techsploits in a pretty unusual way throughout my development process. I initially used CodePen for development. I quickly regretted doing this as I kept losing work when my sessions with the site would be interrupted resulting in my work being continuously saved over. Lesson learned. From now on I’ll only use CodePen to display finished pages and will do development on a local machine with a repository.</p>
-					<p>After I finished building the site locally, I needed to find a hosting provider. The site had been initially hosted on a managed Wordpress account. First I built out the on Amazon Web Services S3, which offers free basic hosting. Then I canceled my Managed Hosting account and opened a linux hosting account with cpanel that gives me a ton of control over my hosting environment.</p>
-					<p>Optimizing Techsploits for speed was my first undertaking after publishing my new blog layout. I mainly used GT Metrix and Google PageSpeed insights to identify the causes of slow page load time. These tools made great suggestions like trying to eliminate as many calls to external resources, like external JavaScript or CSS, as possible. I also cleaned up my CSS during this process in order to make my CSS files as small and fast as possible.</p>
-					<p>Site speed plays a big factor in SEO, but there are many other onsite factors that play into SEO. Firstly, I ensured that my HTML headings were structured properly and that my meta descriptions were well written and optimized for each page’s keywords. I also included intrasite links throughout my articles and ensured that the blog is laid out in a way that is conducive to presenting dynamic content. Now the blog just needs a great deal of quality content and backlinks to it posted in some of my favorite forums.</p>
-					<p>Now that my new blog layout is finalized I can get back to posting about my projects. In the coming days I’ll be posting about Windows group policy, RetroPi consoles, hackintoshes and network security. Stay tuned!</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">How to Obtain a Google Analytics Certification</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on September 9, 2016</p>
-					</div>
-				<p>I’ve recently become interested in acquiring certifications in front end programming, analytics, SEO, and SEM. Aside from catching up on the latest features of these technologies, these certs will enable me to exhibit my knowledge of web development and marketing as a consultant or web service. It doesn’t hurt that I love learning and get a lot of enjoyment from MOOCs, or Massive Online Courses, and certification courses.</p>
-				<p>The Google Analytics is an absolutely crucial tool for web development and online marketing. Google Analytics provides powerful data that can help drive business growth. Typically, a bit Javascript code is placed in the HTML header of all pages on a site to track user sessions and interactions. There are also many Google Analytics plugins</a> that are readily available for the wordpress platform and for other Content Management Systems that are easily installable. This information can then be used to make changes to the site’s user interface, content, and marketing channels.</p>
-				<p>The Google Analytics product is constantly evolving, so this certification course was very helpful in enhancing my understanding of some of the newest features of the platform.</p>
-				<p>The Google Analytics certification exam tests both basic and advanced topics in analytics. The Analytics Academy Courses that are used to prepare for the certification are broken into 5 separate courses: Digital Analytics Fundamentals, Google Analytics Platform Principles, Ecommerce Analytics, Mobile App Analytics Fundamentals, and Google Tag Manager Fundamentals.</p>
-				<p>Each of these courses is conducted by Google Product Managers and analytics professionals. The courses include video lectures, live demos, exams, and many links to additional resources. The User Interface of these courses is very clean and the course content flows well throughout each course.</p>
-				<p>These analytics courses were particularly beneficial in providing information about the newer capabilities of Google’s analytics products. Some of these features included real-time analytics, intelligence events, Ecommerce tracking, dynamic remarketing, cross domain tracking, and others. Moreover, the courses were beneficial in outlining different attribution models and how they can be used to drive conversions/site goals.</p>
-				<p>The course material pertaining to mobile analytics, Google tag management, and AdMob was great as well. Google Tag Manager allows online marketers to easily and dynamically track tags, which are pieces of code that give insight into particular site user actions and can help market to users across multiple marketing channels.</p>
-				<p>I did find much of the material throughout the various courses to be somewhat redundant and basic, especially when compared to the actual content on the exam. It also seemed that much of the course content is being changed, which is probably why individual certifications in each course are not currently available.</p>
-				<p>I found the actual certification itself to be pretty straight forward. However, one aspect of the exam that I did find frustrating was that many of the topics in the exam were not covered in the course lectures.</p>
-				<p>I’ll be continuing my quest for certifications for the next few months. I intend on obtaining the Google AdWords certification, a few HubSpot certifications, some Adobe Certified Associate certs, and then I’ll be studying for the Microsoft 70-480 exam that tests Programming in HTML5 with JavaScript and CSS3 which I am taking later this Fall in pursuit of getting my Microsoft Certified Developer Certification in Web Apps.</p>
-				</div>
-				<hr>
-				<div class="post">
-					<h3 class="post-title">Build a Virtualization Homelab for Cheaper than a Macbook</h3>
-					<div class="post-meta">
-						<p>Posted by <b>Ryan Heavican</b> on August 24, 2016</p>
-					</div>
-				<p>Have you noticed that the cheapest Macbook currently retails for $1,299? Admittedly it’s an awesome notebook that I’d be ecstatic to own. However, it got me thinking: is it possible to build a lightning fast virtualization computer homelab</a> for cheaper than the current cost of a Macbook?</p>
-				<p>TL; DR: by utilizing newer generation hardware, open source software, and discount programs, it’s absolutely possible to build a fast virutalization homelab for cheaper than the cost of a Macbook.</p>
-				<p>This virtualization homelab will provide you with the opportunity to learn about computer networking, operating systems, even how to make your own router and will also enable you to run any number of really cool services. And this homelab is easily expandable if your homelabbing becomes more and more of an addiction, like it has for me.</p>
-				<p>The heart of any virtualization homelab is the hypervisor</a>. A hypervisor is virtualization manager software that allows multiple virtual machines to run on a single hardware host. Our small form factor Intel Next Unit of Computing (NUC) with a 5th Generation i5-5250U processor will act as the host running our homelab’s hypervisor.</p>
-				<p>Since our hypervisor will be hosting all of our virtual servers, it’s important that our NUC is speedy. So our hypervisor’s main drive that will be hosting our virtual machines is a Samsung EVO 500GB M.2 SSD. Virtual Machines can use efficient thin provisioned storage, so a 500GB Solid State Drive will suffice. SSDs have no mechanical parts which makes them much faster than typical Hard Disk Drives.</p>
-				<p>Speaking of HDDs, the NUC will have a 2.5″ 2TB Western Digital Blue HDD for storage. This internal storage space will be perfect for storing and streaming relatively large amounts of data, such as a TV/Movie collection streamed over Plex.</p>
-				<p>We’ll also install 16GB of memory in our NUC. Memory is one of the biggest constraining factors of a hypervisor: less memory = fewer virtual machines. Fortunately, and although specified otherwise in official documentation, our NUC’s memory can be expanded to 32GB by purchasing 16GB memory modules if you run out of memory for your virtual machines in the future. Since NUC’s are comparably cheap, you could also just deploy another NUC for clustering if you run out of memory or storage.</p>
-				<p>There are plenty of great routers/firewalls out there than can be purchased cheaply, like the Ubiquiti Edgerouter. But what’s the fun in buying a router or firewall when you can make your own? Our firewall’s chassis is a barebone industrial PC with a Celeron Processor 3215U and, importantly, 4 RJ45 ports. It’ll also have a 16GB mSATA SSD and a 4GB stick of DDR3L memory.</p>
-				<p>For an access point we’ll use a Ubiquiti Networks Enterprise Unifi AP. The Unifi is an extremely speedy, and affordable, PoE Access Point with great management software.</p>
-				<p>To ensure that all of your network’s wired Ethernet devices can reach your firewall and thus the rest of your LAN/the Internet, it’s necessary to purchase a switch. These TP Link smart switches offer great functionality and, importantly, are VLAN compatible so you can set up multiple virtual networks in your homelab.</p>
-				<p>A Network Attached Storage server is used to back up and store data. Our NAS will be a Synology DS115 DiskStation with a 3TB Western Digital red HDD. This NAS will be used primarily for backing up the NUC and data from the network’s virtual machines via an SCSI drive or SMB network share.</p>
-				<p>XenServer is an open source hypervisor that will be used as the Operating System in the NUC. There’s a ton of other virtualization software including VMware’s ESXi and Microsoft’s Hyper-V. Both of those are paid products even though discounted/free versions can be acquired through VMUG and Dreamspark, which I’ll discuss below. Importantly, XenServer is compatable with our NUC as demonstrated in this great installation tutorial.</p>
-				<p>pfSense is the open source firewall/routing software that will be the OS of the lab’s firewall. pfSense has incredibly deep functionality and a very active online community and will be a great learning resource for anyone looking to get into networking or network security.</p>
-				<p>The great majority of a homelab’s virtual machines will run Linux or Microsoft operating systems. Linux distros are usually open source and free whereas Microsoft’s operating systems and software is usually very expensive. Fortunately, you can gain access to a surprisingly large number of server operating systems and software programs for no cost whatsoever if you simply have a .edu email account. Thus, by just enrolling at a local community college, you gain access to tens of thousands of dollars worth of free software. Joining the VMUG VMware user group for $200 a year also gives free access to most of VMware’s software.</p>
-				<p>What good are all these virtual machines if you have no services running on them? There are innumerable free services ranging from media streaming using Kodi all the way to network penetration testing using Kali. Check out r/homelab’s great wiki on homelab software to find a list of services to run in your lab.</p>
-			</div>
-			<hr>
-			<div class="post">
-				<h3 class="post-title">Server 2016 Technical Preview on Gates the Hyper-V Host</h3>
-				<div class="post-meta">
-					<p>Posted by <b>Ryan Heavican</b> on August 23, 2016</p>
-				</div>
-			<p>Hyper-V is Microsoft’s native hypervisor that allows for the hosting of virtual machines.  I’ve been seriously neglecting my homelab’s</a> newish Hyper-V server for no good reason lately. Gates (pretty obvious namesake) is a Dell PowerEdge T20 Server with a measly 8GB memory (for now), 2 120GB SSDs in RAID 1 and 2 1TB WD Reds in RAID 1 as well. I’d previously installed Windows Server 2012 R2 Data Center on this server, but that’s about it. So it’s definitely time to bring this thing to life.</p>
-			<p>I, firstly, installed Windows Server 2012 R2 Datacenter on the server’s bare metal. I went with the datacenter edition because it allows for unlimited VMs unlike the other versions.  I gave this new server a static IP and enabled Remote Desktop Connect so I can manage the server remotely. Next, I added the Hyper-V role in Server Manager so now Hyper-V is running on the server’s bare metal. I don’t plan on running any live migrations to or from this server so I didn’t worry about those settings during this installation process.</p>
-			<p>Next it was time to create my first virtual machine within Hyper-V. To do this I navigated to the Hyper-V Manager and clicked ‘new virtual machine’ and followed the easy to use new virtual machine wizard.</p>
-			<p>I configured my VM with 2 GB dynamic memory, 128 GB storage (way overkill) and set it up as a second generation VM so it has the most up to date capabilities. I then specified that the VM use a Microsoft Server 2016 Technical Preview ISO that I’d recently downloaded.</p>
-			<p>I connected to the console of the newly created VM, started it up, and followed the easy to follow Windows prompts to install Server 2016. When I initially started the VM, I ran into a scary looking error message. After some Googling I realized that I simply failed to quickly hold down a key when booting from the ISO for the first time. So press and hold down a key as soon as booting from the ISO or you’ll get a scary warning message like I did.</p>
-			<p>After I had Server 2016 up and running, I made a few final simple configuration changes to make it easier to manage. I then set a static IP address and changed the hostname on the VM. I also enabled remote desktop for remote management.</p>
-			<p>I haven’t added Gates or this newly created VM to my domain/Active Directory. I intend on eventually setting Gates up on its own VLAN and turning it into a primary Domain Controller for a new domain apart from my existing homelab domain. In the meantime, I’ll be installing a SQL 16 server and a Guacamole server on Gates. Stay tuned!</p>
-			</div>
-			<hr>
-			<div class="post">
-				<h3 class="post-title">Deploying a LAMP Server in VMware vSphere</h3>
-				<div class="post-meta">
-					<p>Posted by <b>Ryan Heavican</b> on August 22, 2016</p>
-				</div>
-				<p>I’ve been honing my HTML & CSS recently by utilizing a host of mostly free online resources. Using the online editors that these resources have is a very easy way to view how HTML pages are rendered.</p>
-				<p>However, creating your own lab environment that allows you to build web pages in your own directories on your own server will lead to greater familiarity with actual production environments.</p>
-				<p>LAMP is an open source software stack/bundle that provides developers with the tools needed to create dynamic web pages. These tools are Linux, Apache, MySql, and PHP (LAMP). In this project I’ll be installing the LAMP stack on an Ubuntu 16 Server running in VMware vSphere that will be given the hostname of Torvalds in homage to the creator of Linux.</p>
-				<p>First, I downloaded the most up to date Ubuntu Server 16 ISO from the Ubuntu website. Then I created a new virtual machine in vSphere with 2 CPUs, 2 GB of memory, 40 GB of thin provisioned storage, and my downloaded ISO file as the CD/DVD drive file that would be connected at power up. Then I spun up the VM to configure Ubuntu.</p>
-				<p>I chose the default options when configuring Ubuntu and logged into the server for the first time once it’d rebooted at the end of the configuration process. I then installed Ubuntu desktop because I’m a sucker for having GUIs on my servers. I installed the GUI through apt-get by using the simple following commands and then rebooting:<br><br><code>sudo apt-get update</code><br><code>sudo apt-get install ubuntu-desktop</code></p>
-				<p>Then I gave my server a static IP address so that I could find it on my network. This is done by editing the /etc/network/interfaces file. First I had to give my user permission to edit this file by using the following, substituting in my username:<br><br>
-					<code>sudo chown username /etc/network/interfaces</code><br>
-					<code>sudo chmod ug+rwx /etc/network/interfaces</code></p>
-				<p>Then I found my network adapter listed within the file and changed it to ‘static’ and appended the following network information, substituting my network info for the capital letters, and saved the doc:<br><br>
-					<code>address SERVER_IP</code><br>
-					<code>netmask NETWORK_NETMASK</code><br>
-					<code>network NETWORK_IP</code><br>
-					<code>gateway GATEWAY_IP</code><br>
-					<code>dns-nameservers NAMESERVER_IP</code></p>
-				<p>Next, Apache, MySQL, and PHP need to be installed on the Ubuntu Server. This can be accomplished by using these simple apt-get commands:<br><br>
-					<code>sudo apt-get install apache2</code><br>
-					<code>sudo apt-get install mysql-server</code><br>
-					<code>sudo apt-get install php7 libapache2-mod-php7</code><br></p>
-				<p>MySQL will run you through additional basic configuration steps, such as setting a user password. To verify that apache had successfully installed, I just needed to plug the host IP address into a browser window to make sure I got this:</p>
-				<p>Next, I verified that PHP was up and working by creating a simple PHP file called /var/www/info.php with the following bit of code in the file:<br><br>
-					<code>&lt;?php</code><br>
-					<code>phpinfo();</code><br>
-					<code>?&gt;</code><br></p>
-				<p>Then I restarted the apache service by entering ‘sudo service apache2 restart’ and then navigated to HOSTNAME/info.php in a browser to verify that everything was kosher.</p>
-				<p>I wanted to set up LAN FTP access to my new LAMP server to mimic development on a production web server. To accomplish this, I installed vsftpd which is a lightweight FTP server. I did this with the following command:<br><br>
-					<code>sudo apt-get install vsftpd</code><br></p>
-				<p>Then I edited the /etc/vsftpd.conf file to ensure proper access for my user. I uncommented out the following commands within the doc to do so:<br><br>
-					<code>write_enable=YES</code><br>
-					<code>local_umask=022</code><br></p>
-				<p>And appended these commands to the end of the document:<br><br>
-					<code>pasv_enable=Yes</code><br>
-					<code>pasv_min_port=40000</code><br>
-					<code>pasv_max_port=40100</code>
-				</p>
-				<p>Next, I ensured that my user had access to the directory where the HTML and PHP files will live, so I entered the following commands:<br><br>
-					<code>sudo chmod -R ugo+rw /var/www</code><br>
-				</p>
-				<p>Then I plugged in the host and username info and selected port 21 in my FTP client and was able to connect to the LAMP server. Yay!!</p>
-				<p>I then added an A record and PTR record in my network’s DNS server to associate my new LAMP server’s hostname with it’s IP on my network (and vice versa). Torvalds is a very insecure apache server as it is only meant for internal LAN hosting and isn’t accessible to the internet. However,  I may install encryption/SSH onto the server in the future to give added security and for learning purposes.</p>
-			</div>
-			<div class="post">
-				<h3 class="post-title">Creating a Google Analytics Plugin for WordPress</h3>
-				<div class="post-meta">
-					<p>Posted by <b>Ryan Heavican</b> on August 18, 2016</p>
-				</div>
-				<p>WordPress development is an invaluable skill. After all, WordPress is the most widely used Content Management System on the web, with some sources reporting that WordPress occupies a 37% share of all CMSs on the web.</p>
-				<p>Becoming familiar with WordPress’s dashboard is a pretty easy task. The dashboard allows users to easily create and manage their site’s content. The dashboard is very intuitive to use with its WYSIWYG GUIs</p>
-				<p>One of the first tasks that any competent content or web manager publishing a new site should tackle is to ensure that analytics data on all traffic is being accurately captured.</p>
-				<p>Google Analytics is a great platform for tracking such traffic and site user engagement data. Google Analytics tracks this data via a small piece of JavaScript code that should be placed in the header of every page of the website being analyzed.</p>
-				<p>There are innumerable Google Analytics plugins for WordPress. Plugins enable further customization of WordPress sites by installing files made by the WordPress community to one’s site.</p>
-				<p>The Google Analytics plugins allow a user to very easily have WordPress automatically append the Google Analytics code to the header section of every site page. However, one of the primary reasons why I deployed my own WordPress blog was to become more familiar with WordPress under the hood.</p>
-				<p>Disclaimer: I’d never created a WordPress plugin before this and I relied entirely on this awesome blog post to add my own Google Analytics plugin to WordPress. By relying on that very helpful post I was able to get my own plugin up and working by tackling the following steps.</p>
-				<p>You must first review your theme’s header.php file to ensure that you can create this plugin by using the wp_head php hook. Simply go to the theme editor in your dashboard by going to Appearance -> Editor and open your site’s header.php file. Then just make sure that wp_head is in the header section of your site between the &lt;head&gt;&lt;/head&gt; tags.</p>
-				<p>Next you must grab the Google Analytics code for your site by going to your Google Analytics account. Ensure that your site is added as a Google Analytics property and then fine your code by going to Admin -> Property -> Tracking Info -> Tracking Code.</p>
-				<p>Next you need to FTP into your site by using an FTP client like FileZilla and the FTP credentials given by your hosting company. Then navigate to wp-content/plugins and create a new file with a name like google-analytics.php. Use a text editor like Notepad++ to add the following PHP code to the top of the new plugin file:<br><br>
-				<code>&lt;?php</code><br>
-				<code>/*</code><br>
-				<code>Plugin Name: Google Analytics Plugin</code><br>
-				<code>Plugin URI: http://WhatEverWebsiteYouLike.com</code><br>
-				<code>Description: Whatever description you want.</code><br>
-				<code>Author: Any author’s name you want</code><br>
-				<code>Version: 1.0</code><br>
-				<code>*/</code>
-				</p>
-				<p>This code gives WordPress the basic information for this plugin that will display in the Plugins section of your WordPress dashboard.</p>
-				<p>Next we need to add the actual PHP function by adding this code beneath the existing code:<br><br>
-				<code>function google_analytics() { ?></code><br>
-				<code><strong>Copy and paste your Google Analytics code here!!!</strong></code><br>
-				<code>&lt;?php }</code><br>
-				<code>add_action( ‘wp_head’, ‘google_analytics’, 10 )</code>
-				</p>
-				<p>Notice that you’ll need to copy and paste your Google Analytics code from your Analytics page into the code above.</p>
-				<p>Next you need to activate the plugin that you created by going to you Dashboard and then Plugins -> Installed Plugins and look for Google Analytics Plugin. Then activate the plugin by clicking the activate link below its name.</p>
-				<p>Then you need to verify that your plugin works properly. First, review the page source of any page on your site by right clicking and selecting view source. Then lensure that your Google Analytics JavaScript code is at the end of the page’s header section near the closing &lt;/head&gt; tag.</p>
-				<p>Lastly, you need to verify that Google Analytics is receiving data from your site. Go back to the Tracking Code section of your site in Google Analytics. Check the status of your Tracking ID and click the send test traffic button to verify that traffic info is being collected.</p>
-				<p>Great job on installing a plugin that you created from scratch! Although this exercise used some borrowed PHP code, it helps you understand the process of creating and activating your very own plugins and enables one to become familiar with Google Analytics.</p>
-				<hr>
-			</div>
-			<div class="post">
-				<h3 class="post-title">The Continually Evolving Homelab</h3>
-				<div class="post-meta">
-					<p>Posted by <b>Ryan Heavican</b> on August 27, 2016</p>
-				</div>
-				<p>I faced a big challenge when I made the transition from managing web development to managing an IT department.</p>
-				<p>I had plenty of experience setting up routers, managing web servers, and running cool services like Plex on my home network so I thought the task of single-handedly running a small business network would be no sweat.</p>
-				<p>The first few projects such as transitioning the company’s email platform and deploying a new website with a modern CMS were seamless. However, it soon became evident that I needed to expand my knowledge of computer networking to make much needed upgrades to the company’s aging network.</p>
-				<p>Community college courses and online resources like Coursera, Udacity, and even YouTube greatly broadened my computer networking knowledge. But hands on experience is necessary for one to fully understand networking protocols, services, operating systems and devices.</p>
-				<p>An environment where one can safely test, break and fix services is absolutely crucial. Thus, EvolutionLab.net was born.</p>
-				<p>The following networking devices provide the physical infrastructure for my network.</p>
-				<p>My 16 port keystone patch panel keeps my network tidy. The Ethernet cables from all network devices connect into the patch panel, making it very organized and easy to make routing changes. Unlike a typical Cat5/Cat6 patch panel, keystone patch panels use couplers so cables don’t have to be hard wired and different types of couplers can be used (eg USB, Cat 6, HDMI, etc…).</p>
-				<p>My MOTOROLA SB6141 SURFboard cable modem enables the transmission of IPv4 and IPv6 data over my ISP’s coaxial cable lines. It runs DOCSIS 3.0 & supports 343 Mbps download speeds. Nothing fancy to see here.</p>
-				<p>For my router, I bought a used Watchguard Firebox Core X1250e that lacked Watchguard licensing. I then flashed pfSense to the device, which is an absolutely amazing open source firewall platform. The router has 1.5 Gbps throughout and very deep functionality; I’m currently running OpenVPN and Snort IDS. I love my router. A lot.</p>
-				<p>I use a TP-Link TL-SG2424 24 port smart switch. The switch does what it’s supposed to do and is much cheaper than most managed switches. However, TP-Link smart switches use their own nomenclature for VLAN configuration which has caused me a fair amount of frustration.</p>
-				<p>My Ubiquiti UniFI UAP-3 is a rock solid PoE  802.11 b/g/n, 2.4 GHz access point that is capable of 300 Mbps throughput. The coolest thing about UniFi access points is their software, which is very polished and has great functionality.</p>
-					<p>What good would a computer network be without computers? I use cheap refurbished PC laptops as my primary personal computing devices as I’m not a gamer and don’t need anything with blazing fast specs. Rather, my data and services live on the following group of servers.</p>
-				<p>What good would a computer network be without computers? I use cheap refurbished PC laptops as my primary personal computing devices as I’m not a gamer and don’t need anything with blazing fast specs. Rather, my data and services live on the following group of servers.</p>
-				<p>Sagan is a mid 2010 Mac Mini with a 2.4 GHz Intel Core 2 Duo processor, 8 GB of upgraded memory and an upgraded 2 TB HDD. Sagan runs OSX and acts as a media streaming server, running a Plex server, Spotify, and iTunes. I’ll soon be migrating my ~1TB Plex collection of movies and TV shows to Swartz for increased performance and storage capacity.</p>
-				<p>Swartz is a Gen8 HP Microserver with a 2 core 2.3 GHz Intel Xeon E3-1220L v2 processor, 16 GB ECC RAM, and 4 3TB Western Digital Red HDDs in RAID Z2. The device runs FreeNAS off a flash drive. FreeNAS is an open source Network Attached Storage operating system that enables Swartz to provide all network storage and is primarily used for storing backups. Swartz will also soon function as my primary Plex server.</p>
-				<p>Darwin is the heart of my network. Darwin is a Lenovo ThinkServer TS140 with a 4 core Intel Quad Core Xeon E3-1225v3 processor, 28 GB of memory (that will soon be maxed to 32GB), an IBM LSI 9260-8i RAID card, and 2 850 EVO SSDs in RAID1. Darwin boots VMware ESXi Version 6.0.0 off an old laptop SSD. My VMware lab running VMware vSphere with Operations Management 6 Enterprise Plus lives on Darwin and enables me to host Virtual Machines.</p>
-				<p>Boole is a Synology RS812 with 2 3TB HDDs in no current RAID configuration although this will change once I acquire 2 more 3TB HDDs. This device runs Synology’s NAS software and will back up Swartz via rsync once that server becomes my primary Plex host.</p>
-				<p>Gates is a Dell PowerEdge T20 Mini-tower Server with a dual core Intel Pentium G3220 3.0GHz processor, 8 GB of memory, 2 120GB SSDs in RAID 1 and 2 1TB Western Digital Red HDDs also in RAID 1. Gates runs Windows Server 2012 R2 Data Center and serves as a Hyper-V host that will run an all Microsoft test environment, including a technical preview of Server 2016. Fully configuring Hyper-V on Gates is one of my immediate homelab projects and eventually Gates will live on its own VLAN and have much more memory than it currently has.</p>
-				<p>What good are hypervisors like VMware vSphere or Hyper-V if no virtual machines are spinning on the network? Here’s a list of the VMs I currently have running in my homelab.</p>
-				<p>Aristotle is a Microsoft Windows Server 2012 R2 VM that serves as my primary Domain Controller running Active Directory, DNS and DHCP. Aristotle also hosts PRTG, which is network monitoring software.</p>
-				<p>Hemingway is a Microsoft Windows Server 2012 Standard VM that serves as a backup Domain Controller. Hemingway also manages my ebook library using Calibre, runs my Unifi controller for my access point, and runs VEEAM which is an awesome backup tool.</p>
-				<p>Rousseau is an Ubuntu 14.04.4 VM that runs Apache and DokuWiki. DokuWiki is open source wiki software that I use for documenting homelab configurations and other data.</p>
-				<p>Snowden is a Security Onion 14 VM. Snowden runs a Private Internet Access VPN and uTorrent and is used to safely torrent legal(!!!) content.</p>
-				<p>Kleinrock is an instance of Sophos UTM which is a Unified Threat Management system used for network security.</p>
-				<p>Descartes is an instance of VMware vCenter Server Appliance 6.0.0.20000. Descartes is a crucial part of my VMware lab and enables me to access my lab via a browser using the vSphere Web Client UI.</p>
-				<p>My homelab is in a state of constant evolution. My Trello lists are filled with projects that I’ve been tackling over the course of the last year or so. My immediate tasks are to fully deploy Gates, migrate my Plex server to Swartz, setup rsync between Swartz and Boole, and to better configure my network’s VLANs.</p>
-				<p>My more distant goals are to completely max out the memory across my network so that I can run more VMs & to launch a virtual web server that can be used for web/wordpress development. I’m also going to buy and configure 4 raspberry pis; one will run KALI Linux for network penetration testing, one will run Nagios for network monitoring, one will run BRO IDS for network security and the last one will run RetroPi for playing a crapton of games from old video game consoles.</p>
-				<p>I’ll provide plenty of posts about my homelab and will specifically be posting about hyper-v and my network topology in the near future.</p>
-			</div>	
-		</div>
-	</div>	
-	</div><!-- About -->
-	<div class="container-fluid about" id="about">
-		<div class="container-fluid">
-			<div class="row">
-				<!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
-					<h2>About Ryan Heavican</h2><img alt="Ryan Heavican" id="about-img" src="img/ryan-heavican.jpg">
-					<p>Oh hey there Intertubes. My name is Ryan Heavican. I work in IT. I have many hobbies and interests, especially Information Security and the outdoors. I'm in a graduate cybersecurity program and enjoy continually learning about Information Security and pursuing related certifications. I spend as much time possible in the mountains, where I trail-run, hike, camp, climb, and ski. I initially made this blog to learn more about bootstrap and web design.</p>
-				</div>
-			</div>
-		</div>
-	</div><!-- Contact -->
-	<div class="container-fluid contact" id="contact">
-		<h2>Contact Ryan Heavican</h2>
-		<h3>Email</h3><a href="mailto:me@ryanheavican.com" id="email" title="me@ryanheavican.com">me@ryanheavican.com</a>
-		<h3>Social</h3>
-		<ul class="text-center list-inline">
-			<li>
-				<a href="https://www.linkedin.com/in/ryanheavican"><span class="fa-stack fa-lg"><i class="fa fa-linkedin fa-stack-1x fa-inverse" title="LinkedIn"></i></span></a>
-			</li>
-			<li>
-				<a href="https://github.com/EvolvingSysadmin"><span class="fa-stack fa-lg"><i class="fa fa-github fa-stack-1x fa-inverse" title="GitHub"></i></span></a>
-			</li>
-		</ul>
-	</div><!-- Footer -->
-	<footer>
-		<div class="container-fluid">
-			<div class="row">
-				<p class="copyright text-muted">Copyright 2023 &copy; Ryan Heavican</p>
-			</div>
-		</div>
-	</footer><!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript">
-	</script> <!-- Bootstrap JavaScript -->
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <p class="hero__prompt">whoami</p>
+    <h1 class="hero__name">Ryan Heavican</h1>
+    <p class="hero__title">Cybersecurity Professional // CISSP // M.S. Georgia Tech</p>
+    <p class="hero__desc">
+      Blue team practitioner with 10+ years in enterprise IT and security. 
+      Based in Bishop, CA. Focused on identity security, incident response, 
+      and security policy.
+    </p>
+    <div class="hero__actions">
+      <a href="/assets/resume/Ryan_Heavican_Resume.pdf" target="_blank" class="btn btn--primary">download resume</a>
+      <a href="#contact" class="btn btn--outline">get in touch</a>
+    </div>
+  </div>
+</section>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript">
-	</script> <!-- Font Awesome icons -->
-	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<script>
-	          $(document).on('click.nav', '.navbar-collapse.in', function(e) {
-	              if ($(e.target).is('a')) {
-	                  $(this).removeClass('in').addClass('collapse');
-	              }
-	          });
-	</script>
-	<script>
-	          $(function() {
-	              $("body").on("input propertychange", ".floating-label-form-group", function(o) {
-	                  $(this).toggleClass("floating-label-form-group-with-value", !!$(o.target).val())
-	              }).on("focus", ".floating-label-form-group", function() {
-	                  $(this).addClass("floating-label-form-group-with-focus")
-	              }).on("blur", ".floating-label-form-group", function() {
-	                  $(this).removeClass("floating-label-form-group-with-focus")
-	              })
-	          }), jQuery(document).ready(function(o) {
-	              var s = 1170;
-	              if (o(window).width() > s) {
-	                  var i = o(".navbar-custom").height();
-	                  o(window).on("scroll", {
-	                      previousTop: 0
-	                  }, function() {
-	                      var s = o(window).scrollTop();
-	                      s < this.previousTop ? s > 0 && o(".navbar-custom").hasClass("is-fixed") ? o(".navbar-custom").addClass("is-visible") : o(".navbar-custom").removeClass("is-visible is-fixed") : s > this.previousTop && (o(".navbar-custom").removeClass("is-visible"), s > i && !o(".navbar-custom").hasClass("is-fixed") && o(".navbar-custom").addClass("is-fixed")), this.previousTop = s
-	                  })
-	              }
-	          });
-	</script>
-</body>
-</html>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <p class="section__label">// about</p>
+    <h2 class="section__title">Background</h2>
+    <p class="about__text">
+      I'm a solo IT and security practitioner who has spent 10+ years running the full stack — 
+      network infrastructure, identity management, endpoint security, incident response, and 
+      compliance — for a multi-site industrial manufacturer operating under a government subcontract. 
+      I hold a <strong>CISSP</strong> and completed an <strong>M.S. in Cybersecurity at Georgia Tech</strong> 
+      in May 2025, with a focus on policy.
+    </p>
+    <p class="about__text">
+      My graduate practicum produced a set of 36 open-source cybersecurity policy templates 
+      aligned to NIST CSF 2.0, freely available for SMBs. Outside of work I'm based in the 
+      Eastern Sierra — trail running, alpine climbing, and fly fishing when I'm not in front of a terminal.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <p class="section__label">// projects</p>
+    <h2 class="section__title">Work & Projects</h2>
+    <div class="projects__grid">
+
+      <div class="project-card">
+        <div class="project-card__title">Cybersecurity Policy Templates</div>
+        <p class="project-card__desc">
+          Graduate practicum project: 36 free policy templates aligned to NIST CSF 2.0 
+          core functions (Govern, Identify, Protect, Detect, Respond, Recover), with 
+          implementation guidance for small and medium-sized businesses.
+        </p>
+        <div class="project-card__tags">
+          <span class="tag">NIST CSF 2.0</span>
+          <span class="tag">GRC</span>
+          <span class="tag">Policy</span>
+          <span class="tag">GitBook</span>
+        </div>
+        <a href="https://docs.policytemplates.online" target="_blank" class="project-card__link">docs.policytemplates.online →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">DFIR Toolkit</div>
+        <p class="project-card__desc">
+          Documentation and reference toolkit for Digital Forensics and Incident Response — 
+          tools, techniques, and methodology for blue team practitioners.
+        </p>
+        <div class="project-card__tags">
+          <span class="tag">DFIR</span>
+          <span class="tag">Blue Team</span>
+          <span class="tag">Documentation</span>
+        </div>
+        <a href="https://blueteam.ryanheavican.com" target="_blank" class="project-card__link">blueteam.ryanheavican.com →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">Penetration Testing Toolkit</div>
+        <p class="project-card__desc">
+          Reference toolkit covering penetration testing tools and techniques for Windows, 
+          Linux, and web applications. Built for study and defensive awareness.
+        </p>
+        <div class="project-card__tags">
+          <span class="tag">Pentesting</span>
+          <span class="tag">Red Team</span>
+          <span class="tag">Documentation</span>
+        </div>
+        <a href="https://redteam.ryanheavican.com" target="_blank" class="project-card__link">redteam.ryanheavican.com →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">PowerShell Sysadmin Toolkit</div>
+        <p class="project-card__desc">
+          Collection of PowerShell scripts for Active Directory administration and common 
+          sysadmin automation tasks. Publicly available on GitHub.
+        </p>
+        <div class="project-card__tags">
+          <span class="tag">PowerShell</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">Automation</span>
+        </div>
+        <a href="https://github.com/EvolvingSysadmin/Systems-Administration-Toolkit" target="_blank" class="project-card__link">GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">Cybersecurity Homelab</div>
+        <p class="project-card__desc">
+          Detection engineering and malware analysis environment running OPNsense, Proxmox, 
+          TrueNAS, Docker, Snort, Splunk, ELK Stack, Kali Linux, and SIFT Workstation.
+        </p>
+        <div class="project-card__tags">
+          <span class="tag">Homelab</span>
+          <span class="tag">Splunk</span>
+          <span class="tag">Detection Engineering</span>
+          <span class="tag">Proxmox</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">Techsploits Blog Archive</div>
+        <p class="project-card__desc">
+          Archive of the Techsploits blog (2016–2023), covering homelab builds, 
+          cybersecurity certifications, PowerShell, and IT infrastructure projects.
+        </p>
+        <div class="project-card__tags">
+          <span class="tag">Archive</span>
+          <span class="tag">Homelab</span>
+          <span class="tag">Blog</span>
+        </div>
+        <a href="https://github.com/EvolvingSysadmin/ryanheavican-blog-archive" target="_blank" class="project-card__link">GitHub →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <p class="section__label">// certifications</p>
+    <h2 class="section__title">Credentials</h2>
+    <div class="certs__grid">
+
+      <div class="cert-item cert-item--active">
+        <span class="cert-item__name">CISSP</span>
+        <span class="cert-item__detail">Certified Information Systems Security Professional</span>
+        <span class="cert-item__detail muted">Valid through 2027</span>
+      </div>
+
+      <div class="cert-item">
+        <span class="cert-item__name">M.S., Cybersecurity</span>
+        <span class="cert-item__detail">Georgia Institute of Technology</span>
+        <span class="cert-item__detail muted">2025 · Policy focus</span>
+      </div>
+
+      <div class="cert-item">
+        <span class="cert-item__name">CySA+</span>
+        <span class="cert-item__detail">CompTIA Cybersecurity Analyst+</span>
+      </div>
+
+      <div class="cert-item">
+        <span class="cert-item__name">BTL1</span>
+        <span class="cert-item__detail">Blue Team Level 1</span>
+      </div>
+
+      <div class="cert-item">
+        <span class="cert-item__name">Splunk</span>
+        <span class="cert-item__detail">Core Certified Power User</span>
+      </div>
+
+      <div class="cert-item">
+        <span class="cert-item__name">Microsoft Certified</span>
+        <span class="cert-item__detail">Security, Compliance & Identity Fundamentals</span>
+      </div>
+
+      <div class="cert-item">
+        <span class="cert-item__name">B.A., Legal Studies</span>
+        <span class="cert-item__detail">University of California, Berkeley · High Distinction</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- THIS SITE -->
+<section id="site">
+  <div class="container">
+    <p class="section__label">// meta</p>
+    <h2 class="section__title">About This Site</h2>
+    <div class="site__stack">
+      <div class="stack-item">
+        <div class="stack-item__label">Generator</div>
+        <div class="stack-item__value">Jekyll 4 (static)</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-item__label">Hosting</div>
+        <div class="stack-item__value">GitHub Pages</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-item__label">DNS & Proxy</div>
+        <div class="stack-item__value">Cloudflare</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-item__label">TLS</div>
+        <div class="stack-item__value">Cloudflare (Full)</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-item__label">Email Security</div>
+        <div class="stack-item__value">SPF · DKIM · DMARC</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-item__label">Source</div>
+        <div class="stack-item__value"><a href="https://github.com/EvolvingSysadmin/EvolvingSysadmin.github.io" target="_blank">GitHub →</a></div>
+      </div>
+    </div>
+    <p class="site__note">
+      No tracking, no analytics, no JavaScript frameworks, no CMS. Hand-built with Jekyll and 
+      plain SCSS, deployed via GitHub Actions on push to main. 
+      DNS records and email security configured manually.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <p class="section__label">// contact</p>
+    <h2 class="section__title">Get In Touch</h2>
+    <p class="contact__desc">
+      Open to cybersecurity roles, contract work, and consulting. 
+      Remote-first, based in Bishop, CA.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:ryan@ryanheavican.com" class="contact__link">ryan@ryanheavican.com</a>
+      <a href="https://linkedin.com/in/ryanheavican" target="_blank" class="contact__link">linkedin.com/in/ryanheavican</a>
+      <a href="https://github.com/EvolvingSysadmin" target="_blank" class="contact__link">github.com/EvolvingSysadmin</a>
+    </div>
+  </div>
+</section>
